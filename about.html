@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About WoodenUtensilGuide - Your Trusted Source for Wooden Kitchen Tools</title>
+    <meta name="description" content="Learn about WoodenUtensilGuide - your trusted resource for wooden cooking utensils, care guides, and sustainable kitchen solutions. Discover our mission and expertise.">
+    <link rel="canonical" href="https://woodenutensilguide.com/about/" />
+    <style>
+        /* All the same CSS as previous pages */
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+		html, body {
+    overflow-x: hidden;
+}
+
+        
+        :root {
+            --primary: #2a5934;
+            --primary-light: #4a7c59;
+            --secondary: #8c6d46;
+            --light: #f8fbf9;
+            --dark: #2c3e2d;
+            --gray: #6c757d;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--primary-light);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .search-form {
+            display: flex;
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        .search-form input {
+            flex: 1;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+            font-size: 1rem;
+        }
+        
+        .search-form button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+        
+        /* Fixed Navigation - Equal Top/Bottom Padding */
+        .main-nav {
+            background-color: var(--primary);
+            position: relative;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 18px 0;
+        }
+        
+        .nav-simple {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-simple li {
+            position: relative;
+        }
+        
+        .nav-simple a {
+            display: block;
+            padding: 12px 25px;
+            color: var(--white);
+            font-weight: 500;
+            font-size: 1rem;
+        }
+        
+        .nav-simple a:hover {
+            background-color: var(--primary-light);
+        }
+        
+        /* Dropdown for Categories */
+        .nav-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 220px;
+            box-shadow: var(--shadow);
+            border-radius: 0 0 4px 4px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: var(--transition);
+            z-index: 1000;
+        }
+        
+        .nav-simple li:hover .nav-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .nav-dropdown a {
+            color: var(--dark);
+            padding: 12px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            background: var(--white);
+        }
+        
+        .nav-dropdown a:hover {
+            background: #f8f9fa;
+            color: var(--primary);
+        }
+        
+        .nav-dropdown a:last-child {
+            border-bottom: none;
+        }
+        
+        /* AdSense Banner Styles */
+        .ad-banner {
+            background-color: #f5f5f5;
+            border: 1px dashed #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+            overflow: hidden;
+        }
+        
+        .ad-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .ad-header {
+            height: 90px;
+        }
+        
+        .ad-sidebar {
+            height: 600px;
+            width: 160px;
+        }
+        
+        .ad-content {
+            height: 250px;
+            margin: 20px 0;
+        }
+        
+        .ad-footer {
+            height: 90px;
+        }
+        
+        /* Main Content Styles */
+        main {
+            display: flex;
+            gap: 30px;
+            padding: 30px 0;
+        }
+        
+        .content {
+            flex: 1;
+        }
+        
+        .sidebar {
+            width: 250px;
+        }
+        
+        .page-header {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .page-header h1 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .breadcrumb {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: var(--gray);
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--primary);
+        }
+        
+        .article-content {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .article-content h1 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+        
+        .article-content h2 {
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin: 25px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .article-content h3 {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin: 20px 0 10px;
+        }
+        
+        .article-content h4 {
+            font-size: 1.1rem;
+            color: var(--dark);
+            margin: 15px 0 8px;
+        }
+        
+        .article-content p {
+            margin-bottom: 15px;
+        }
+        
+        .article-content ul, .article-content ol {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        
+        .article-content li {
+            margin-bottom: 8px;
+        }
+        
+        .affiliate-link {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: 500;
+            margin: 15px 0;
+            transition: var(--transition);
+        }
+        
+        .affiliate-link:hover {
+            background: var(--primary-light);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .faq-section {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .faq-section h2 {
+            margin-top: 0;
+        }
+        
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        
+        .faq-item h3 {
+            margin: 0 0 8px;
+            font-size: 1.1rem;
+        }
+        
+        /* Sidebar Styles */
+        .sidebar-widget {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+        }
+        
+        .sidebar-widget h3 {
+            font-size: 1.3rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .category-list {
+            list-style: none;
+        }
+        
+        .category-list li {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .category-list li:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .category-list a {
+            display: flex;
+            align-items: center;
+            color: var(--dark);
+        }
+        
+        .category-list a:hover {
+            color: var(--primary);
+        }
+        
+        .category-list a::before {
+            content: "›";
+            margin-right: 8px;
+            color: var(--primary);
+        }
+        
+        .popular-posts .post {
+            display: flex;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .popular-posts .post:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .post-thumb {
+            width: 70px;
+            height: 70px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-right: 15px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #aaa;
+            font-size: 0.8rem;
+        }
+        
+        .post-content h4 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+        
+        .post-content h4 a {
+            color: var(--dark);
+        }
+        
+        .post-content h4 a:hover {
+            color: var(--primary);
+        }
+        
+        .post-meta {
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+        
+        /* Footer Styles */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 50px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+        }
+        
+        .footer-links a:hover {
+            color: var(--white);
+        }
+        
+        .affiliate-disclosure {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .sidebar {
+                display: none;
+            }
+            
+            .ad-sidebar {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-top {
+                flex-wrap: wrap;
+            }
+            
+            .search-form {
+                order: 3;
+                max-width: 100%;
+                margin-top: 15px;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .nav-container {
+                padding: 12px 0;
+                justify-content: flex-end;
+            }
+            
+            .nav-simple {
+                flex-direction: column;
+                display: none;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: auto;
+                background: var(--primary);
+                width: 280px;
+                border-radius: 0 0 0 8px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+                z-index: 1000;
+            }
+            
+            .nav-simple.active {
+                display: flex;
+            }
+            
+            .nav-dropdown {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                background: rgba(0,0,0,0.1);
+                margin-left: 20px;
+                width: auto;
+            }
+            
+            .nav-dropdown a {
+                background: transparent;
+                color: var(--white);
+            }
+            
+            .nav-dropdown a:hover {
+                background: rgba(255,255,255,0.1);
+                color: var(--white);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">Wooden<span>Utensil</span>Guide</div>
+                <form class="search-form">
+                    <input type="text" placeholder="Search for wooden utensils...">
+                    <button type="submit">Search</button>
+                </form>
+                <button class="mobile-toggle">☰</button>
+            </div>
+        </div>
+        
+        <!-- Fixed Navigation with Equal Padding -->
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-container">
+                    <ul class="nav-simple">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="#">Categories</a>
+                            <div class="nav-dropdown">
+    <a href="index.html">Wooden Cooking Utensils</a>
+    <a href="safe-cooking-utensils.html">Safe Cooking Utensils</a>
+    <a href="olive-wood-utensils.html">Olive Wood Utensils</a>
+    <a href="how-to-clean-wooden-utensils.html">Cleaning Guide</a>
+    <a href="long-handle-wooden-spoons.html">Long Handle Spoons</a>
+    <a href="wooden-utensil-holder.html">Utensil Holders</a>
+    <a href="handmade-wooden-utensils.html">Handmade Utensils</a>
+    <a href="walnut-wood-utensils.html">Walnut Utensils</a>
+</div>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- AdSense Header Banner -->
+    <div class="container">
+        <div class="ad-banner ad-header">
+            <img src="https://images.unsplash.com/photo-1556909114-4d0d853e5e25?ixlib=rb-1.2.1&auto=format&fit=crop&w=728&h=90&q=80" alt="Wooden Utensils Banner">
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <main>
+            <div class="content">
+                <!-- Breadcrumb -->
+                <div class="page-header">
+                    <div class="breadcrumb">
+                        <a href="index.html">Home</a> &gt; <span>About Us</span>
+                    </div>
+                    <h1>About WoodenUtensilGuide</h1>
+                </div>
+
+                <!-- Article Content -->
+                <article class="article-content">
+                    <p>Welcome to WoodenUtensilGuide, your trusted resource for everything related to wooden kitchen utensils. We're passionate about helping home cooks and professional chefs alike discover the beauty, functionality, and sustainability of wooden cooking tools.</p>
+                    
+                    <!-- In-content Ad after 1st paragraph -->
+                    <div class="ad-banner ad-content">
+                        <img src="https://images.unsplash.com/photo-1604329756703-964bcf1d5959?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=250&q=80" alt="About Wooden Utensils">
+                    </div>
+                    
+                    <h2>Our Mission</h2>
+                    <p>At WoodenUtensilGuide, we believe that the right kitchen tools can transform your cooking experience. Our mission is to provide comprehensive, accurate, and practical information about wooden utensils—from basic <strong>wooden cooking utensils</strong> to specialized <strong>olive wood spoons</strong> and premium <strong>walnut kitchen utensils</strong>.</p>
+                    
+                    <h2>What We Do</h2>
+                    
+                    <h3>Expert Reviews and Recommendations</h3>
+                    <p>We thoroughly test and review wooden utensils from various manufacturers, providing honest assessments of their quality, durability, and performance. Our recommendations help you make informed decisions about which tools belong in your kitchen.</p>
+                    
+                    <h3>Comprehensive Care Guides</h3>
+                    <p>Proper maintenance is essential for wooden utensils. We provide detailed guides on <strong>how to clean wooden utensils</strong>, proper seasoning techniques, and troubleshooting common issues to ensure your tools last for years.</p>
+                    
+                    <h3>Sustainable Kitchen Solutions</h3>
+                    <p>We're committed to promoting eco-friendly kitchen practices. Our focus on wooden utensils supports sustainable living by reducing plastic waste and encouraging the use of renewable resources.</p>
+                    
+                    <!-- Mid-page Ad between sections -->
+                    <div class="ad-banner ad-content">
+                        <img src="https://images.unsplash.com/photo-1587334984005-84f2274efc8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=250&q=80" alt="Kitchen Expertise">
+                    </div>
+                    
+                    <h2>Why Trust WoodenUtensilGuide?</h2>
+                    
+                    <h3>Years of Kitchen Experience</h3>
+                    <p>Our team includes professional chefs, home cooking enthusiasts, and woodworking experts who bring decades of combined experience to every review and guide we publish.</p>
+                    
+                    <h3>Rigorous Testing Standards</h3>
+                    <p>Every product we recommend has been thoroughly tested in real kitchen environments. We evaluate durability, functionality, comfort, and safety to ensure our recommendations meet the highest standards.</p>
+                    
+                    <h3>Transparent and Honest</h3>
+                    <p>We maintain complete transparency about our testing methods and affiliate relationships. Our primary goal is to provide valuable information that helps you create the kitchen of your dreams.</p>
+                    
+                    <h2>Our Content Categories</h2>
+                    
+                    <h3>Wooden Cooking Utensils</h3>
+                    <p>Comprehensive guides covering all types of <strong>wooden kitchen tools</strong>, from basic spoon sets to specialized utensils for specific cooking tasks.</p>
+                    
+                    <h3>Safe Cooking Utensils</h3>
+                    <p>Important information about <strong>non-toxic utensils</strong> and <strong>safe cooking utensils</strong> to help you make health-conscious choices for your family.</p>
+                    
+                    <h3>Specialty Wood Utensils</h3>
+                    <p>In-depth exploration of premium materials like <strong>olive wood utensils</strong>, <strong>walnut wood utensils</strong>, and other specialty woods.</p>
+                    
+                    <h3>Care and Maintenance</h3>
+                    <p>Essential information on <strong>how to clean wooden utensils</strong> and proper storage solutions to extend the life of your tools.</p>
+                    
+                    <!-- In-content Ad after 5th paragraph -->
+                    <div class="ad-banner ad-content">
+                        <img src="https://images.unsplash.com/photo-1556909114-4d0d853e5e25?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=250&q=80" alt="Wooden Utensil Expertise">
+                    </div>
+                    
+                    <h2>Affiliate Disclosure</h2>
+                    <p>WoodenUtensilGuide participates in various affiliate marketing programs, which means we may earn commissions on purchases made through our links to retailer sites. This comes at no extra cost to you and helps support our work in providing quality content. We only recommend products we genuinely believe in and have tested ourselves.</p>
+                    
+                    <h2>Contact Us</h2>
+                    <p>We love hearing from our readers! Whether you have questions about specific utensils, need advice on care and maintenance, or want to suggest topics for future content, please don't hesitate to <a href="contact.html">contact us</a>.</p>
+                    
+                    <div class="faq-section">
+                        <h2>Frequently Asked Questions (FAQs)</h2>
+                        
+                        <div class="faq-item">
+                            <h3>How often do you update your content?</h3>
+                            <p>We regularly review and update our content to ensure accuracy and relevance. Product reviews are updated at least annually, and care guides are revised as new information becomes available.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3>Do you accept product submissions for review?</h3>
+                            <p>Yes, we welcome product submissions from manufacturers. However, we maintain complete editorial independence and provide honest reviews regardless of how we obtain products.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3>Can I contribute to WoodenUtensilGuide?</h3>
+                            <p>We occasionally accept guest contributions from experienced writers and kitchen professionals. Please contact us with your credentials and writing samples if you're interested in contributing.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3>How can I stay updated with new content?</h3>
+                            <p>Bookmark our site and check back regularly for new articles and updates. We're constantly adding new content to help you make the most of your wooden kitchen tools.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- AdSense Sidebar Banner -->
+                <div class="ad-banner ad-sidebar">
+                    <img src="https://images.unsplash.com/photo-1556909114-4d0d853e5e25?ixlib=rb-1.2.1&auto=format&fit=crop&w=160&h=600&q=80" alt="About Kitchen Tools">
+                </div>
+                
+                <!-- Categories Widget -->
+                <div class="sidebar-widget">
+    <h3>Categories</h3>
+    <ul class="category-list">
+        <li><a href="index.html">Wooden Cooking Utensils</a></li>
+        <li><a href="safe-cooking-utensils.html">Safe Cooking Utensils</a></li>
+        <li><a href="olive-wood-utensils.html">Olive Wood Utensils</a></li>
+        <li><a href="how-to-clean-wooden-utensils.html">Cleaning Guide</a></li>
+        <li><a href="long-handle-wooden-spoons.html">Long Handle Spoons</a></li>
+        <li><a href="wooden-utensil-holder.html">Utensil Holders</a></li>
+        <li><a href="handmade-wooden-utensils.html">Handmade Utensils</a></li>
+        <li><a href="walnut-wood-utensils.html">Walnut Utensils</a></li>
+    </ul>
+</div>
+                
+                <!-- Popular Posts Widget -->
+                <div class="sidebar-widget popular-posts">
+                    <h3>Popular Guides</h3>
+                    <div class="post">
+                        <div class="post-thumb">
+                            <img src="https://images.unsplash.com/photo-1587334984005-84f2274efc8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=70&h=70&q=80" alt="Cleaning Guide">
+                        </div>
+                        <div class="post-content">
+                            <h4><a href="how-to-clean-wooden-utensils.html">How to Clean Wooden Utensils</a></h4>
+                            <div class="post-meta">Care Guide</div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-thumb">
+                            <img src="https://images.unsplash.com/photo-1604329756703-964bcf1d5959?ixlib=rb-1.2.1&auto=format&fit=crop&w=70&h=70&q=80" alt="Safe Utensils">
+                        </div>
+                        <div class="post-content">
+                            <h4><a href="safe-cooking-utensils.html">Safe Cooking Utensils</a></h4>
+                            <div class="post-meta">Health & Safety</div>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-thumb">
+                            <img src="https://images.unsplash.com/photo-1556909114-4d0d853e5e25?ixlib=rb-1.2.1&auto=format&fit=crop&w=70&h=70&q=80" alt="Wooden Cooking">
+                        </div>
+                        <div class="post-content">
+                            <h4><a href="index.html">Wooden Cooking Utensils</a></h4>
+                            <div class="post-meta">Complete Guide</div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <!-- AdSense Footer Banner -->
+    <div class="container">
+        <div class="ad-banner ad-footer">
+            <img src="https://images.unsplash.com/photo-1587334984005-84f2274efc8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=728&h=90&q=80" alt="Kitchen Resources">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>WoodenUtensilGuide</h3>
+                    <p>Your complete resource for eco-friendly wooden kitchen utensils. Discover the best tools, care tips, and sustainable options for your kitchen.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+               <div class="footer-column">
+    <h3>Categories</h3>
+    <ul class="footer-links">
+        <li><a href="index.html">Wooden Cooking Utensils</a></li>
+        <li><a href="safe-cooking-utensils.html">Safe Cooking Utensils</a></li>
+        <li><a href="olive-wood-utensils.html">Olive Wood Utensils</a></li>
+        <li><a href="how-to-clean-wooden-utensils.html">Cleaning Guide</a></li>
+        <li><a href="long-handle-wooden-spoons.html">Long Handle Spoons</a></li>
+    </ul>
+</div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li>Email: info@woodenutensilguide.com</li>
+                       
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="affiliate-disclosure">
+                <strong>Affiliate Disclosure:</strong> We may earn a small commission from qualifying purchases made through links on our site, at no extra cost to you. This helps support our website and allows us to continue providing helpful and high-quality content.
+            </div>
+            
+            <div class="copyright">
+                &copy; 2024 WoodenUtensilGuide.com. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-simple').classList.toggle('active');
+        });
+        
+        // Search Functionality
+        document.querySelector('.search-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const searchTerm = this.querySelector('input').value.trim().toLowerCase();
+            if (searchTerm) {
+                // Simple search implementation - redirect to appropriate page based on search term
+                const searchMap = {
+                    'clean': 'how-to-clean-wooden-utensils.html',
+                    'cleaning': 'how-to-clean-wooden-utensils.html',
+                    'wash': 'how-to-clean-wooden-utensils.html',
+                    'care': 'how-to-clean-wooden-utensils.html',
+                    'safe': 'safe-cooking-utensils.html',
+                    'safety': 'safe-cooking-utensils.html',
+                    'olive': 'olive-wood-utensils.html',
+                    'spoon': 'long-handle-wooden-spoons.html',
+                    'spoons': 'long-handle-wooden-spoons.html',
+                    'holder': 'wooden-utensil-holder.html',
+                    'handmade': 'handmade-wooden-utensils.html',
+                    'walnut': 'walnut-wood-utensils.html',
+                    'about': 'about.html',
+                    'contact': 'contact.html',
+                    'privacy': 'privacy-policy.html',
+                    'terms': 'terms-of-service.html'
+                };
+                
+                let foundPage = 'index.html'; // Default to home page
+                
+                // Check if any search term matches our map
+                for (const [keyword, page] of Object.entries(searchMap)) {
+                    if (searchTerm.includes(keyword)) {
+                        foundPage = page;
+                        break;
+                    }
+                }
+                
+                // Redirect to the found page
+                window.location.href = foundPage;
+            }
+        });
+        
+        // Schema Markup for SEO
+        const schema = {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            "name": "About WoodenUtensilGuide",
+            "description": "Learn about WoodenUtensilGuide - your trusted resource for wooden cooking utensils, care guides, and sustainable kitchen solutions.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "WoodenUtensilGuide",
+                "url": "https://woodenutensilguide.com",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://woodenutensilguide.com/logo.png"
+                }
+            },
+            "mainEntity": {
+                "@type": "WebPage",
+                "@id": "https://woodenutensilguide.com/about/"
+            }
+        };
+        
+        // Add schema markup to page
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(schema);
+        document.head.appendChild(script);
+    </script>
+</body>
+</html>

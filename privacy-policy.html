@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - WoodenUtensilGuide</title>
+    <meta name="description" content="Read WoodenUtensilGuide's Privacy Policy to understand how we collect, use, and protect your personal information when you visit our website.">
+    <link rel="canonical" href="https://woodenutensilguide.com/privacy-policy/" />
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary: #2a5934;
+            --primary-light: #4a7c59;
+            --secondary: #8c6d46;
+            --light: #f8fbf9;
+            --dark: #2c3e2d;
+            --gray: #6c757d;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--primary);
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--primary-light);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .search-form {
+            display: flex;
+            max-width: 400px;
+            width: 100%;
+        }
+        
+        .search-form input {
+            flex: 1;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+            font-size: 1rem;
+        }
+        
+        .search-form button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+        
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+        
+        /* Fixed Navigation - Equal Top/Bottom Padding */
+        .main-nav {
+            background-color: var(--primary);
+            position: relative;
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 18px 0;
+        }
+        
+        .nav-simple {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav-simple li {
+            position: relative;
+        }
+        
+        .nav-simple a {
+            display: block;
+            padding: 12px 25px;
+            color: var(--white);
+            font-weight: 500;
+            font-size: 1rem;
+        }
+        
+        .nav-simple a:hover {
+            background-color: var(--primary-light);
+        }
+        
+        /* Dropdown for Categories */
+        .nav-dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 220px;
+            box-shadow: var(--shadow);
+            border-radius: 0 0 4px 4px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: var(--transition);
+            z-index: 1000;
+        }
+        
+        .nav-simple li:hover .nav-dropdown {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .nav-dropdown a {
+            color: var(--dark);
+            padding: 12px 20px;
+            border-bottom: 1px solid #f0f0f0;
+            background: var(--white);
+        }
+        
+        .nav-dropdown a:hover {
+            background: #f8f9fa;
+            color: var(--primary);
+        }
+        
+        .nav-dropdown a:last-child {
+            border-bottom: none;
+        }
+        
+        /* AdSense Banner Styles */
+        .ad-banner {
+            background-color: #f5f5f5;
+            border: 1px dashed #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+            overflow: hidden;
+        }
+        
+        .ad-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .ad-header {
+            height: 90px;
+        }
+        
+        .ad-sidebar {
+            height: 600px;
+            width: 160px;
+        }
+        
+        .ad-content {
+            height: 250px;
+            margin: 20px 0;
+        }
+        
+        .ad-footer {
+            height: 90px;
+        }
+        
+        /* Main Content Styles */
+        main {
+            padding: 30px 0;
+        }
+        
+        .page-header {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .page-header h1 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .breadcrumb {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+        
+        .breadcrumb a {
+            color: var(--gray);
+        }
+        
+        .breadcrumb a:hover {
+            color: var(--primary);
+        }
+        
+        .policy-content {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+        }
+        
+        .policy-content h2 {
+            font-size: 1.6rem;
+            color: var(--primary);
+            margin: 30px 0 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .policy-content h2:first-child {
+            margin-top: 0;
+        }
+        
+        .policy-content h3 {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin: 20px 0 10px;
+        }
+        
+        .policy-content p {
+            margin-bottom: 15px;
+        }
+        
+        .policy-content ul, .policy-content ol {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        
+        .policy-content li {
+            margin-bottom: 8px;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 50px 0 20px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+        }
+        
+        .footer-links a:hover {
+            color: var(--white);
+        }
+        
+        .affiliate-disclosure {
+            background: rgba(255,255,255,0.1);
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-top {
+                flex-wrap: wrap;
+            }
+            
+            .search-form {
+                order: 3;
+                max-width: 100%;
+                margin-top: 15px;
+            }
+            
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .nav-container {
+                padding: 12px 0;
+                justify-content: flex-end;
+            }
+            
+            .nav-simple {
+                flex-direction: column;
+                display: none;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                left: auto;
+                background: var(--primary);
+                width: 280px;
+                border-radius: 0 0 0 8px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+                z-index: 1000;
+            }
+            
+            .nav-simple.active {
+                display: flex;
+            }
+            
+            .nav-dropdown {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                background: rgba(0,0,0,0.1);
+                margin-left: 20px;
+                width: auto;
+            }
+            
+            .nav-dropdown a {
+                background: transparent;
+                color: var(--white);
+            }
+            
+            .nav-dropdown a:hover {
+                background: rgba(255,255,255,0.1);
+                color: var(--white);
+            }
+            
+            .policy-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">Wooden<span>Utensil</span>Guide</div>
+                <form class="search-form">
+                    <input type="text" placeholder="Search for wooden utensils...">
+                    <button type="submit">Search</button>
+                </form>
+                <button class="mobile-toggle">☰</button>
+            </div>
+        </div>
+        
+        <!-- Fixed Navigation with Equal Padding -->
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-container">
+                    <ul class="nav-simple">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="#">Categories</a>
+                            <div class="nav-dropdown">
+    <a href="index.html">Wooden Cooking Utensils</a>
+    <a href="safe-cooking-utensils.html">Safe Cooking Utensils</a>
+    <a href="olive-wood-utensils.html">Olive Wood Utensils</a>
+    <a href="how-to-clean-wooden-utensils.html">Cleaning Guide</a>
+    <a href="long-handle-wooden-spoons.html">Long Handle Spoons</a>
+    <a href="wooden-utensil-holder.html">Utensil Holders</a>
+    <a href="handmade-wooden-utensils.html">Handmade Utensils</a>
+    <a href="walnut-wood-utensils.html">Walnut Utensils</a>
+</div>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- AdSense Header Banner -->
+    <div class="container">
+        <div class="ad-banner ad-header">
+            <img src="https://images.unsplash.com/photo-1587334984005-84f2274efc8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=728&h=90&q=80" alt="Wooden Utensils">
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <main>
+            <!-- Breadcrumb -->
+            <div class="page-header">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> &gt; <span>Privacy Policy</span>
+                </div>
+                <h1>Privacy Policy</h1>
+            </div>
+
+            <!-- Policy Content -->
+            <div class="policy-content">
+                <p><strong>Last Updated:</strong> January 15, 2024</p>
+                
+                <p>Welcome to WoodenUtensilGuide ("we," "our," or "us"). We are committed to protecting your privacy and ensuring you have a positive experience on our website. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website woodenutensilguide.com.</p>
+                
+                <p>Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access the site.</p>
+                
+                <h2>Information We Collect</h2>
+                
+                <h3>Personal Information</h3>
+                <p>We may collect personal information that you voluntarily provide to us when you:</p>
+                <ul>
+                    <li>Contact us through our contact form</li>
+                    <li>Subscribe to our newsletter</li>
+                    <li>Leave comments on our articles</li>
+                    <li>Participate in surveys or promotions</li>
+                </ul>
+                <p>This information may include your name, email address, and any other information you choose to provide.</p>
+                
+                <h3>Automatically Collected Information</h3>
+                <p>When you visit our website, we automatically collect certain information about your device and browsing activities, including:</p>
+                <ul>
+                    <li>IP address</li>
+                    <li>Browser type and version</li>
+                    <li>Operating system</li>
+                    <li>Referring website</li>
+                    <li>Pages you view on our site</li>
+                    <li>Time and date of your visit</li>
+                    <li>Time spent on each page</li>
+                </ul>
+                
+                <h2>How We Use Your Information</h2>
+                <p>We use the information we collect to:</p>
+                <ul>
+                    <li>Provide, operate, and maintain our website</li>
+                    <li>Improve, personalize, and expand our website</li>
+                    <li>Understand and analyze how you use our website</li>
+                    <li>Develop new products, services, features, and functionality</li>
+                    <li>Communicate with you, either directly or through one of our partners</li>
+                    <li>Send you emails</li>
+                    <li>Find and prevent fraud</li>
+                </ul>
+                
+                <h2>Cookies and Tracking Technologies</h2>
+                <p>We use cookies and similar tracking technologies to track activity on our website and store certain information. Cookies are files with a small amount of data that may include an anonymous unique identifier.</p>
+                
+                <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our website.</p>
+                
+                <h2>Third-Party Services</h2>
+                <p>We may use third-party service providers to monitor and analyze the use of our website, including:</p>
+                
+                <h3>Google Analytics</h3>
+                <p>We use Google Analytics to collect information about how visitors use our website. The information generated by the cookie about your use of the website (including your IP address) will be transmitted to and stored by Google on servers in the United States.</p>
+                
+                <h3>Google AdSense</h3>
+                <p>We use Google AdSense to display advertisements on our website. Google AdSense may use cookies to serve ads based on your prior visits to our website or other websites.</p>
+                
+                <h2>Affiliate Links</h2>
+                <p>Our website contains affiliate links. If you click on an affiliate link and make a purchase, we may receive a small commission at no additional cost to you. We only recommend products and services we believe will provide value to our readers.</p>
+                
+                <h2>Data Security</h2>
+                <p>We implement appropriate security measures to protect your personal information. However, please remember that no method of transmission over the Internet or method of electronic storage is 100% secure.</p>
+                
+                <h2>Your Data Protection Rights</h2>
+                <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+                <ul>
+                    <li>The right to access – You have the right to request copies of your personal data.</li>
+                    <li>The right to rectification – You have the right to request that we correct any information you believe is inaccurate.</li>
+                    <li>The right to erasure – You have the right to request that we erase your personal data.</li>
+                    <li>The right to restrict processing – You have the right to request that we restrict the processing of your personal data.</li>
+                    <li>The right to object to processing – You have the right to object to our processing of your personal data.</li>
+                    <li>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you.</li>
+                </ul>
+                
+                <h2>Children's Privacy</h2>
+                <p>Our website is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
+                
+                <h2>Changes to This Privacy Policy</h2>
+                <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+                
+                <h2>Contact Us</h2>
+                <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                <ul>
+                    <li>By email: privacy@woodenutensilguide.com</li>
+                    <li>Through our contact form on the website</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <!-- AdSense Footer Banner -->
+    <div class="container">
+        <div class="ad-banner ad-footer">
+            <img src="https://images.unsplash.com/photo-1556909114-4d0d853e5e25?ixlib=rb-1.2.1&auto=format&fit=crop&w=728&h=90&q=80" alt="Kitchen Tools">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>WoodenUtensilGuide</h3>
+                    <p>Your complete resource for eco-friendly wooden kitchen utensils. Discover the best tools, care tips, and sustainable options for your kitchen.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Wooden Cooking Utensils</a></li>
+                        <li><a href="safe-cooking-utensils.html">Safe Cooking Utensils</a></li>
+                        <li><a href="olive-wood-utensils.html">Olive Wood Utensils</a></li>
+                        <li><a href="how-to-clean-wooden-utensils.html">Cleaning Guide</a></li>
+                        <li><a href="long-handle-wooden-spoons.html">Long Handle Spoons</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li>Email: info@woodenutensilguide.com</li>
+                       
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="affiliate-disclosure">
+                <strong>Affiliate Disclosure:</strong> We may earn a small commission from qualifying purchases made through links on our site, at no extra cost to you. This helps support our website and allows us to continue providing helpful and high-quality content.
+            </div>
+            
+            <div class="copyright">
+                &copy; 2024 WoodenUtensilGuide.com. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Navigation Toggle
+        document.querySelector('.mobile-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-simple').classList.toggle('active');
+        });
+        
+        // Search Functionality
+        document.querySelector('.search-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const searchTerm = this.querySelector('input').value.trim().toLowerCase();
+            if (searchTerm) {
+                // Simple search implementation - redirect to appropriate page based on search term
+                const searchMap = {
+                    'clean': 'how-to-clean-wooden-utensils.html',
+                    'cleaning': 'how-to-clean-wooden-utensils.html',
+                    'wash': 'how-to-clean-wooden-utensils.html',
+                    'care': 'how-to-clean-wooden-utensils.html',
+                    'safe': 'safe-cooking-utensils.html',
+                    'safety': 'safe-cooking-utensils.html',
+                    'olive': 'olive-wood-utensils.html',
+                    'spoon': 'long-handle-wooden-spoons.html',
+                    'spoons': 'long-handle-wooden-spoons.html',
+                    'holder': 'wooden-utensil-holder.html',
+                    'handmade': 'handmade-wooden-utensils.html',
+                    'walnut': 'walnut-wood-utensils.html',
+                    'about': 'about.html',
+                    'contact': 'contact.html',
+                    'privacy': 'privacy-policy.html',
+                    'terms': 'terms-of-service.html'
+                };
+                
+                let foundPage = 'index.html'; // Default to home page
+                
+                // Check if any search term matches our map
+                for (const [keyword, page] of Object.entries(searchMap)) {
+                    if (searchTerm.includes(keyword)) {
+                        foundPage = page;
+                        break;
+                    }
+                }
+                
+                // Redirect to the found page
+                window.location.href = foundPage;
+            }
+        });
+        
+        // Schema Markup for SEO
+        const schema = {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Privacy Policy - WoodenUtensilGuide",
+            "description": "Read WoodenUtensilGuide's Privacy Policy to understand how we collect, use, and protect your personal information when you visit our website.",
+            "publisher": {
+                "@type": "Organization",
+                "name": "WoodenUtensilGuide",
+                "url": "https://woodenutensilguide.com"
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://woodenutensilguide.com/privacy-policy/"
+            }
+        };
+        
+        // Add schema markup to page
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(schema);
+        document.head.appendChild(script);
+    </script>
+</body>
+</html>
